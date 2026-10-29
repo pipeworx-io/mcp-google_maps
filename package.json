@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-google_maps",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Google Maps MCP Pack — geocoding, places, directions, distance matrix, elevation. Uses Google Maps Platform APIs (API key based, not OAuth). Expects GOOGLE_MAPS_API_KEY injected via gateway env or BYO via _context.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-google_maps": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "google_maps"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-google_maps.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/google_maps",
   "pipeworx": {
-    "sourceHash": "v1-2bd333a351a56f9b125d44961cc1e19c7aac5fe7b1d064f88033612e165aa133",
-    "sourceCommit": "445bacc5596a845c12d6945fbfcdf330ef60dcc4"
+    "mode": "gateway",
+    "slug": "google_maps",
+    "gatewaySlug": "google_maps",
+    "sourceHash": "v1-702b5d825c10c9204b0375d12c9008e6dad70cbc61bdf30f487b2ddebb9fde3c",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
