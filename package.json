@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-google_maps",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Google Maps MCP Pack — geocoding, places, directions, distance matrix, elevation. Uses Google Maps Platform APIs (API key based, not OAuth). Expects GOOGLE_MAPS_API_KEY injected via gateway env or BYO via _context.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "google_maps",
     "gatewaySlug": "google_maps",
-    "sourceHash": "v1-702b5d825c10c9204b0375d12c9008e6dad70cbc61bdf30f487b2ddebb9fde3c",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-f92dc5c5d7bd10f377bffb4cf866e4532c5c5381e8602b913a085a5d6e9a0473",
+    "sourceCommit": "030233f6b150a38a44421f88a5fcbad123f0fea8"
   }
 }
